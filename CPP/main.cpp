@@ -40,12 +40,28 @@ int main() {
     // cout << "Dviding a non-zero number by zero: " << non_zero_number / zero_number << endl; // Should print "inf"
     // cout << "Dviding zero by zero: " << nan_value << endl; // Should print "nan"
     // cout << "boolean size "<< sizeof(bool) << " bytes" << endl;
-    char char1 = 'a', char2 = 65;
-    cout << "char1: " << char1 << ", char2: " << char2 << endl;
-    cout << "value(int) " << static_cast<int>(char1) << ", " << static_cast<int>(char2) << endl;
-    cout << "Size of char: " << sizeof(char) << " bytes" << endl;
-    auto var1 = 10ul    ; // unsigned long
-    auto var2 = 10.5f   ; // float
+    // char char1 = 'a', char2 = 65;
+    // cout << "char1: " << char1 << ", char2: " << char2 << endl;
+    // cout << "value(int) " << static_cast<int>(char1) << ", " << static_cast<int>(char2) << endl;
+    // cout << "Size of char: " << sizeof(char) << " bytes" << endl;
+    // auto var1 = 10ul    ; // unsigned long
+    // auto var2 = 10.5f   ; // float
+    // int value = 5;
+    // cout << "value++ " << value++ << endl; // Should print 5, then value becomes 6
+    // value = 5;
+    // cout << "++value " << ++value << endl; // value becomes 7,
 
+    cout << "This msg is being flushed " << endl << flush;
+    cout << left; // Align to left
+    cout << internal; // Align to internal
+    cout << setfill('*'); // Set fill character to '*'
+    cout << setw(10) << "Abhradip" << setw(10) << "Paul" <<endl; // Set width to 10 for each column
+    cout << boolalpha; // Print bool as true/false
+    cout << "Boolean value: " << (5 > 3) << endl; // Should print "true"
+    cout << noboolalpha; // Print bool as 1/0
+    cout << "Boolean value: " << (5 > 3) << endl; // Should print "1"
+    cout << showpos; // Show '+' for positive numbers
+    cout << "Positive number: " << 5 << endl; // Should print "+5"
+    
     return 0;
 }
