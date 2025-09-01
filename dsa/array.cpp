@@ -20,7 +20,7 @@ void removeEven(int* arr, int length) {
         }
     }
     // cout << "Array after removing even numbers: " << newInt << endl;
-    printArray(newInt, count);
+    printArray(newInt, sizeof(newInt)/sizeof(newInt[0]));
 }
 
 int main() {
