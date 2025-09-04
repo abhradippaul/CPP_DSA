@@ -1,8 +1,9 @@
 {
-    "files.associations": {
-        "iostream": "cpp",
-        "iomanip": "cpp",
-        "limits": "cpp",
-        "ostream": "cpp"
-    }
+  "files.associations": {
+    "iostream": "cpp",
+    "iomanip": "cpp",
+    "limits": "cpp",
+    "ostream": "cpp",
+    "system_error": "cpp"
+  }
 }
