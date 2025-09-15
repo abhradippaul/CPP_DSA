@@ -17,6 +17,26 @@ using namespace std;
 //     cout << endl;
 // }
 
+// int *add(int *a, int *b)
+// {
+//     int *c = new int((*a) + (*b));
+//     return c;
+// }
+// int add(int a, int b)
+// {
+//     return a + b;
+// }
+
+void a()
+{
+    cout << "Hello" << endl;
+}
+
+void b(void (*ptr)())
+{
+    ptr();
+}
+
 int main()
 {
     // int a = 10;  // int
@@ -113,6 +133,43 @@ int main()
     // cout << "Value of p is " << p << endl;
     // cout << "Value of *p is " << sizeof(p) << endl;
     // cout << "Value of *p is " << *p << endl;
+    // int n;
+    // cout << "Enter size of the array ";
+    // cin >> n;
+    // int *p_arr = new int[n];
+    // for (size_t i = 0; i < n; i++)
+    // {
+    //     *(p_arr + i) = i;
+    // }
+    // cout << "The output of the array is ";
+    // for (size_t i = 0; i < n; i++)
+    // {
+    //     cout << *(p_arr + i) << " ";
+    // }
+    // cout << endl;
+    // delete p_arr;
+    // p_arr = nullptr;
+    // int a = 1, b = 2;
+    // // int *p_result = add(&a, &b);
+    // int (*p)(int, int) = add;
+    // cout << "The sum is " << p(a, b) << endl;
+    // b(a);
+    // void (*p)() = a;
+    // b(p);
+    // int *data = new (nothrow) int[10000000];
+    // if (data != nullptr)
+    // {
+    //     cout << "This will work";
+    // }
+    // cout << "If it is throwing error" << endl;
+    // try
+    // {
+    //     int *data = new (nothrow) int[10000000000];
+    // }
+    // catch (const std::exception &e)
+    // {
+    //     cout << e.what() << endl;
+    // }
 
     cout << "This is more on pointer";
     return 0;
