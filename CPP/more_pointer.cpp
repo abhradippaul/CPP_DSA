@@ -113,6 +113,10 @@ int main()
     // cout << "Value of p is " << p << endl;
     // cout << "Value of *p is " << sizeof(p) << endl;
     // cout << "Value of *p is " << *p << endl;
+    // char msg[] = "hello world";
+    char *p_message = "hello world";
+
+    cout << *p_message;
 
     cout << "This is more on pointer";
     return 0;
