@@ -170,6 +170,10 @@ int main()
     // {
     //     cout << e.what() << endl;
     // }
+    // char msg[] = "hello world";
+    char *p_message = "hello world";
+
+    cout << *p_message;
 
     cout << "This is more on pointer";
     return 0;
