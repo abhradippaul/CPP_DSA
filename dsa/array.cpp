@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstring>
+
 using namespace std;
 
 void printArray(int *arr, int length)
@@ -146,38 +148,47 @@ void printArray(int *arr, int length)
 //     return newArr;
 // }
 
-int distinctNumber(int *arr, int size)
-{
-    // int number = 0;
-    // for (size_t i = 1; i <= size; i++)
-    // {
-    //     bool is_present = false;
-    //     for (size_t j = 0; j < size; j++)
-    //     {
-    //         if (*(arr + j) == i)
-    //         {
-    //             is_present = true;
-    //         }
-    //     }
-    //     if (!is_present)
-    //     {
-    //         number = i;
-    //     }
-    // }
-    int arrayTotal = 0;
-    int totalValue = ((size + 1) * (size + 2)) / 2;
-    for (size_t i = 0; i < size; i++)
-    {
-        arrayTotal = arrayTotal + *(arr + i);
-    }
+// int distinctNumber(int *arr, int size)
+// {
+//     int arrayTotal = 0;
+//     int totalValue = ((size + 1) * (size + 2)) / 2;
+//     for (size_t i = 0; i < size; i++)
+//     {
+//         totalValue -= *(arr + i);
+//     }
 
-    return totalValue - arrayTotal;
-}
+//     return totalValue;
+// }
+
+// void isPalindrome(const char *string)
+// {
+//     int end = strlen(string) - 1;
+//     int start = 0;
+//     while (start < end)
+//     {
+//         if (tolower(*(string + start)) != tolower(*(string + end)))
+//         {
+//             break;
+//         }
+
+//         start++;
+//         end--;
+//     }
+
+//     if (start >= end)
+//     {
+//         cout << "The string is palindrom " << endl;
+//     }
+//     else
+//     {
+//         cout << "The string is not palindrom " << endl;
+//     }
+// }
 
 int main()
 {
-    int length = 7;
-    int *arr = new int[length]{2, 4, 1, 8, 6, 3, 7};
+    // int length = 7;
+    // int *arr = new int[length]{2, 4, 1, 8, 6, 3, 7};
     // int* arr = new int[5];
     // Print array elements using a loop
     // removeEven(arr, length);
@@ -190,7 +201,9 @@ int main()
     // printArray(newArr, newCapacity);
     // delete[] arr;
     // arr = nullptr;
-    cout << "Number is not present " << distinctNumber(arr, length) << endl;
+    // cout << "Number is not present " << distinctNumber(arr, length) << endl;
+    // char string[]{"ABBA"};
+    // isPalindrome(string);
     cout << "Successfully end" << endl;
     return 0;
 }

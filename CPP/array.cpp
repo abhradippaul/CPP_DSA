@@ -41,6 +41,9 @@ int main()
     // char message2[] = "Abhradip Paul";
     // cout << "My name is " << message2;
     // cout << "Unbounded data " << message2[12];
+
+    // Dynamic array does not support ranged based for loop
+
     cout << "Array handling";
 
     return 0;
