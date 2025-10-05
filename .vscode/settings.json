@@ -4,6 +4,9 @@
     "iomanip": "cpp",
     "limits": "cpp",
     "ostream": "cpp",
-    "system_error": "cpp"
+    "system_error": "cpp",
+    "typeinfo": "cpp",
+    "string": "cpp",
+    "algorithm": "cpp"
   }
 }
